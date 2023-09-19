@@ -2,10 +2,6 @@
 FROM riscv64/ubuntu
 # FROM scratch
 
-RUN apt-get update && \
-    apt-get install -y gcc-riscv64-linux-gnu && \
-    rm -rf /var/lib/apt/lists/*
-
 COPY ./iiot_gw /usr/local/bin/iiot_gw
 COPY ./iiot_gw.json /usr/local/bin/iiot_gw.json
 COPY ./iiot_hdms /usr/local/bin/iiot_hdms
