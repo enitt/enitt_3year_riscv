@@ -1,6 +1,7 @@
 #FROM ubuntu:latest
 FROM riscv64/ubuntu
 # FROM scratch
+RUN apt-get update
 
 COPY ./iiot_gw /usr/local/bin/iiot_gw
 COPY ./iiot_gw.json /usr/local/bin/iiot_gw.json
