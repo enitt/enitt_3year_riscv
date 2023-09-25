@@ -1,5 +1,6 @@
 #FROM ubuntu:latest
-FROM riscv64/ubuntu
+# FROM riscv64/ubuntu
+FROM riscv64/alpine
 # FROM scratch
 
 COPY ./iiot_gw_3 /usr/local/bin/iiot_gw
